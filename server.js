@@ -8,7 +8,7 @@ function start(route) {
 		route(pathname);
 
 		console.log('request received');
-		response.writeHead(600, {"content-Type": "text/plain"});
+		response.writeHead(200, {"content-Type": "text/plain"});
 		response.write("Hello World");
 		response.end();
 

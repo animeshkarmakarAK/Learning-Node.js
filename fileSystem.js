@@ -31,3 +31,13 @@ fs.appendFile('Animesh.txt', '\nsome data being appended', (err)=>{
 		console.log('\n Data appended successfully\n');
 
 })
+
+//delete created file
+
+fs.unlink('Animesh.txt', (err)=>{
+	if(err)
+		console.log(err);
+	else
+		console.log('file deleted successfully');
+ 
+})
